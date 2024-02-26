@@ -1,0 +1,30 @@
+﻿<Page x:Class="InstallApp.InstallConfirmationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:InstallApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="InstallConfirmationPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label FontSize="20" Grid.Column="1">Sovellus asennetaan kansioon:</Label>
+        <TextBlock x:Name="folderPath" Height="20" Width="400" VerticalAlignment="Bottom" Grid.Column="1"></TextBlock>
+        <Button x:Name="nextBtn" Click="nextBtn_Click" Height="20" Width="60" VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                Grid.Column="2" Grid.Row="1">Jatka</Button>
+        <Button x:Name="prevBtn" Click="prevBtn_Click" Height="20" Width="60" VerticalAlignment="Bottom" HorizontalAlignment="Left"
+                Grid.Column="1" Grid.Row="1">Takaisin</Button>
+    </Grid>
+</Page>
