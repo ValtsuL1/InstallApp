@@ -21,7 +21,7 @@
             <RowDefinition Height="20"></RowDefinition>
         </Grid.RowDefinitions>
         <Label FontSize="20" Grid.Column="1">Sovellus asennetaan kansioon:</Label>
-        <TextBlock x:Name="folderPath" Height="20" Width="400" VerticalAlignment="Bottom" Grid.Column="1"></TextBlock>
+        <TextBlock x:Name="folderPath" Height="20" Width="400" VerticalAlignment="Bottom" Grid.Column="1" Background="LightGray"></TextBlock>
         <Button x:Name="nextBtn" Click="nextBtn_Click" Height="20" Width="60" VerticalAlignment="Bottom" HorizontalAlignment="Right"
                 Grid.Column="2" Grid.Row="1">Jatka</Button>
         <Button x:Name="prevBtn" Click="prevBtn_Click" Height="20" Width="60" VerticalAlignment="Bottom" HorizontalAlignment="Left"
