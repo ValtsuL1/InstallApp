@@ -8,6 +8,8 @@ namespace InstallLogic
         {
             Directory.CreateDirectory(targetInfo.FullName);
 
+
+            // sleep functions added to better demonstrate installation progress
             foreach (var file in sourceInfo.GetFiles())
             {
                 Thread.Sleep(500);

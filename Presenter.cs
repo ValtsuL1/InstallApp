@@ -6,7 +6,7 @@ namespace Presentation
     public static class Presenter
     {
         public static string? InstallationPath { get; set; }
-        private static string sourcePath = Path.Combine(Environment.CurrentDirectory, "copyfrom");
+        private static string sourcePath = Path.Combine(Environment.CurrentDirectory, "Tiedostot");
 
         public static void Install()
         {
